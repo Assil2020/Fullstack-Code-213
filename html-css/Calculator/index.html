@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="left-nav">
+          <h1>calc</h1>
+        </div>
+        <div class="right-nav">
+          <div class="theme">
+            <span>THEME</span>
+          </div>
+          <div class="number-theme">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <div class="rectangle">
+              <div class="circular"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <span>399,981</span>
+      </div>
+      <div class="calculator-key">
+        <table class="same-size-container">
+          <tr class="calculator-key-row">
+            <td><input class="same-size" type="button" value="7" /></td>
+            <td><input class="same-size" type="button" value="8" /></td>
+            <td><input class="same-size" type="button" value="9" /></td>
+            <td><input id="dell-blue-color" type="button" value="DEL" /></td>
+          </tr>
+          <tr class="calculator-key-row">
+            <td><input class="same-size" type="button" value="4" /></td>
+            <td><input class="same-size" type="button" value="5" /></td>
+            <td><input class="same-size" type="button" value="6" /></td>
+            <td><input class="same-size" type="button" value="+" /></td>
+          </tr>
+          <tr class="calculator-key-row">
+            <td><input class="same-size" type="button" value="1" /></td>
+            <td><input class="same-size" type="button" value="2" /></td>
+            <td><input class="same-size" type="button" value="3" /></td>
+            <td><input class="same-size" type="button" value="-" /></td>
+          </tr>
+          <tr class="calculator-key-row">
+            <td><input class="same-size" type="button" value="." /></td>
+            <td><input class="same-size" type="button" value="0" /></td>
+            <td><input class="same-size" type="button" value="/" /></td>
+            <td><input class="same-size" type="button" value="X" /></td>
+          </tr>
+        </table>
+        <table class="large-size-container">
+          <tr class="large-size-calculator-key">
+            <td>
+              <input
+                class="larg-size"
+                id="reset-blue-color"
+                type="button"
+                value="RESET"
+              />
+            </td>
+            <td>
+              <input
+                class="larg-size"
+                id="equal-red-color"
+                type="button"
+                value="="
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

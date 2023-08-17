@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  body {
+    background-color: #3B4764;
+    color: hsl(0, 0%, 100%);
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    position: fixed;
+  }
+
+  .container{
+
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: (3, 1fr);;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+  } 
+  
+  .navbar{
+    width: 65%;
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0px 0px 450px;
+  }
+  
+  .right-nav{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+    padding: 0px 460px 5px 10px;
+  }
+  
+  .left-nav{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: (1, 1fr);
+    padding: 20px 0px 20px 100px;
+  }
+  
+  .theme{
+    padding: 35px 40px 40px 40px;
+    font-size: 14px;
+  }
+  
+  .number-theme ul{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    grid-gap: 35px;
+  }
+  
+  .rectangle{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: (2, 1fr);
+    background-color: #252e44;
+    padding: 10px 20px 10px 14px;
+    border-radius: 20px;
+    margin: 5px -20px;
+  }
+  
+  .circular{
+    background-color: #d0412e;
+    width: 20%;
+    border-radius: 50% ;
+    padding-bottom: 20%; 
+  }
+  
+  .result{
+    width: 28.7%;
+    background-color: #252e44;
+    margin: 0px 420px 0px 550px;
+    border-radius: 10px;
+  }
+  
+  .result span{
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px
+  }
+  
+  .calculator-key{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: #252e44;
+    margin: 20px 420px 0px 550px;
+    padding: 20px 20px 5px 35px;
+    border-radius: 10px;
+  }
+  
+  input[class="same-size"] {
+    width: 100%;
+    padding: 5px 30px;
+    background-color: #eae3db;
+    color: #252e44;
+    font-size : 30px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 4px solid  #a79b97;
+  }
+  
+  
+  input[id="dell-blue-color"] {
+    background-color: #647399;
+    color: #feffff;
+    padding: 15px 20px 10px 20px;
+    font-size : 20px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 4px solid  #2c3854;
+  }
+  
+  .large-size-container{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  input[class="larg-size"]{
+    width: 100%;
+    background-color: #eae3BD;
+    font-size : 20px;
+    font-weight: bold
+  }
+  
+  input[id="reset-blue-color"] {
+    background-color: #647399;
+    color: #feffff;
+    padding: 12px 52px 12px 55px;
+    border: none;
+    border-bottom: 4px solid  #2c3854;
+  }
+  
+  input[id="equal-red-color"] {
+    width: 100%;
+    background-color: #d13f2f;
+    color: #feffff;
+    padding: 12px 82px 12px 82px;
+    border: none;
+    border-bottom: 4px solid  #8d2820;
+  }
+  
+  .calculator-key input[class="same-size"],
+  .calculator-key input[id="dell-blue-color"],
+  .calculator-key input[class="larg-size"],
+  .calculator-key input[id="reset-blue-color"],
+  .calculator-key input[id="equal-red-color"] {
+    margin: 5px 0px 5px 0px;
+    border-radius: 8px;
+  }
+  
+  .calculator-key-row td{
+    padding: 0px 15px 5px 0px; 
+  }
+  
+  .large-size-calculator-key td{
+    padding: 0px 15px 0px 0px; 
+  }
+  
+
+  @media screen 
+  and (max-width : 1000px) 
+   {
+  .container{
+    margin-left: -500px; 
+    height: 100%;
+  }
+
+  .navbar{
+    margin: 200px 0px -200px 450px;
+  }
+
+  .result{
+    height: 30%;
+    margin-top: -100px;
+  }
+
+  .calculator-key{
+    height: 85%; 
+    margin-top: -300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      margin-left: -520px;
+    }
+  
+    .number-theme ul,
+    .theme,
+    .left-nav h1,
+    input[class="same-size"],
+    input[id="dell-blue-color"],
+    input[class="larg-size"],
+    input[id="reset-blue-color"],
+    input[id="equal-red-color"] {
+      font-size: 15px;
+    }
+  
+    .number-theme ul {
+      grid-gap: 15px;
+    }
+  
+    .right-nav {
+      padding: 0px 650px 5px 0px;
+    }
+  
+    .left-nav h1 {
+      font-size: 30px;
+    }
+  
+    .theme {
+      padding-left: 50px;
+    }
+  
+    .theme span {
+      margin-right: -20px;
+    }
+  
+    .circular {
+      width: 5%;
+      margin-left: -4px;
+      padding: 10px;
+    }
+  
+    .result {
+      width: 19%;
+      margin-top: -160px;
+    }
+  
+    .result span {
+      font-size: 25px;
+    }
+  
+    .calculator-key {
+      width: 15%;
+      margin-top: -390px;
+    }
+  
+    input[class="same-size"] {
+      width: 100%;
+      padding: 10px 20px;
+    }
+  
+    input[id="dell-blue-color"] {
+      padding: 11px 10px;
+    }
+  
+    input[id="reset-blue-color"] {
+      padding: 15px 50px 12px 15px;
+    }
+  
+    input[id="equal-red-color"] {
+      padding: 15px 55px 12px 50px;
+      border-bottom: 4px solid #8d2820;
+    }
+  }

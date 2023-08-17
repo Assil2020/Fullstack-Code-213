@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0
+}
+
+.container{
+    width: 100%;
+    font-family: "Montserrat",Arial,sans-serif;
+    
+}
+
+.nav-bar-section{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.602);
+    width: 100%;
+    padding: 20px 0 20px 20px;
+}
+
+.nav-left img{
+    width: 50px;
+    height: 50px
+}
+
+.nav-right {
+    color:rgb(255, 255, 255)
+}
+
+.nav-right a:hover{
+    background-color: #9da2b8;
+    color: black;
+}
+
+.presentation-section{
+    display: inline-block;
+    padding: 20px 0 40px 20px;
+    background-color:#526d8259
+}
+
+.txt-presentation h1{
+    color: rgb(171, 63, 41);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.txt-presentation P{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.img-presentation img{
+    width: 50%;
+    border-radius: 2%;
+    border: 5px solid #020e4a;
+}
+
+.our-stroy-section{
+    display: inline-block;
+    padding: 20px 0 40px 20px;
+    background-color:#DDE6ED
+}
+
+.txt-our-story h1{
+    color: rgb(171, 63, 41);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.txt-our-story P{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.img-our-stroy img{
+    width: 40%;
+    height: 30%;
+    border-radius: 4%;  
+    margin-bottom: 40px;
+    border: 5px solid #032431;
+}
+
+.craftsmanship-quality{
+    display: inline-block;
+    padding: 20px 0 20px 0;
+}
+
+.craftsmanship-quality h1{
+    color: rgb(171, 63, 41);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.txt-craftsmanship-quality P{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.img-craftsmanship-quality img{
+    width: 25%;
+    height: 25%;
+    border-radius: 4%;
+    border: 5px solid #45545b; 
+}
+
+.receipe-section{
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    background-color: #526d8259;
+}
+
+.receipe-section h1{
+    color: rgb(171, 63, 41);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 0 0 20px;
+}
+
+.receipe-div h2{
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    margin-bottom: 10px;
+}
+
+.ingredients-wholemeal-crust-pizza-rossa{
+    text-align: left;    
+}
+
+.ingredients-div ul{
+    list-style: none;
+    padding: 20px 0 10px 20px;
+}
+
+.ingredients-div li{
+    padding-bottom: 20px;
+}
+
+.method-wholemeal-crust-pizza-rossa{
+    text-align: left;    
+}
+
+.method-div ol{
+    padding: 20px 0 10px 40px;
+}
+
+.method-div li{
+    padding-bottom: 20px;
+}
+
+.pizza-receip-img{
+    width: 25%;
+    height: 25%;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border-radius: 15%; 
+    border: 4px solid #143d04;
+}
+
+/* .wholemeal-receipe-img{
+    border-radius: 30%; 
+    border: 4px solid #7e1c1c;
+}
+
+.cheat-deep-receipe-img{
+    border-radius: 30%; 
+    border: 4px solid #1c4a7e;
+}
+
+.easy-spelt-receipe-img{
+    border-radius: 30%; 
+    border: 4px solid #143d04;
+}
+
+.twister-receipe-img{
+    border-radius: 30%; 
+    border: 4px solid #9e1042;
+}
+
+.form-border-info{
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+} */
+
+
+.contact-section{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 0 40px;
+    background-color:#DDE6ED;
+    padding-bottom: 40px;
+}
+
+.txt-contact h1{
+    color: rgb(171, 63, 41);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-input{
+    padding-left: 20px;
+    width: 550px;
+    height: 50px;
+    border-radius: 2%; 
+    text-align: left;
+}
+
+.btn-send{
+    background-color: #c35206;
+    border: none;
+    border-radius: 2%; 
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-containter{
+    width: 100%;
+    background-color: #526d8259;
+    padding: 40px 0 40px 20px;
+}
+
+.footer-containter a{
+    color: rgb(3, 13, 52);
+    padding: 20px 0 0 20px;
+    margin-top: 0.5%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.footer-containter p{
+    padding: 20px 0 0 20px;
+    color: rgb(4, 16, 52);
+}
