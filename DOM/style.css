@@ -10,7 +10,6 @@ body {
     background-color: #397468;
     margin: 20px;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -60,9 +59,8 @@ ul {
 
 li {
     background-color: #fff;
-    padding: 10px 0px 10px 310px;
+    padding: 10px 0px 10px 10px;
     margin: 20px 0px 20px 0px;
-    margin-bottom: 20px;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
@@ -75,16 +73,11 @@ li.completed {
     opacity: 0.5;
 }
 
-.task-texte{
-    display: flex;
-    flex-direction : column;
-    justify-content: space-between;
-}
-
 .task-buttons{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap:10px;
+    margin-left : 300px
 }
 
 button.delete-button {
@@ -104,20 +97,22 @@ button.complete-button:hover {
 }
 
 button.edit-button {
-    background-color: #4848B3
+    background-color: #4848B3;
 }
 
 button.edit-button:hover {
     background-color: #4848B3;
 }
 
-.edit-input{
-    padding: 0px -50px 0px 0px;
+.edit-input {
+    margin: 20px 20px 20px 20px;
 }
 
-button.save-button
-{
-    background-color: #4CAF50
-
+button.save-button {
+    background-color: #4CAF50;
+    margin-right: 20px;
 }
 
+button.save-button:hover {
+    background-color: #4CAF50;
+}
