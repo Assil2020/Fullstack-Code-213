@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding:0
+}
+
+.App h1{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 40px;
+  color:rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.coins-div{
+  background-color:  rgb(123, 49, 49);
+}
+
+.coins-div h1{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 40px;
+  background-color: rgb(125, 126, 28);
+  color:white;
+  text-transform: uppercase;
+}
+
+.markets-div h1{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 40px;
+  background-color: rgb(125, 126, 28);
+  color:white;
+  text-transform: uppercase;
+}
+
+
+.markets-div{
+  background-color:  rgb(51, 45, 176);
+}
+
+.div-coins, .div-markets{
+  display:flex;
+  flex-direction: column;
+}
+
+.div-coins, .div-markets h2{
+  padding: 10px;
+}
+
+.coins-symbole, .coins-price, .markets-base, .markets-price, .markets-volume, .markets-market-share {
+  padding: 10px;
+}
+
+.btn-coins{
+  background-color: rgb(123, 49, 49);
+  color:beige;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius:10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-coins:hover{
+  background-color: rgb(51, 45, 176);
+}
+
+.btn-markets{
+  background-color: rgb(51, 45, 176);
+  color:beige;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius:10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-markets:hover{
+  background-color: rgb(123, 49, 49);
+}
