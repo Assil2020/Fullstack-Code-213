@@ -1,0 +1,56 @@
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.app{
+ height: 100vh;
+ display: grid;
+ place-items: center;
+}
+
+ .Logout__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  background-color:rgba(254, 44, 85, 1);
+  color: white;
+  font-weight: bold;
+  font-size:14px;
+  text-decoration: none;
+ }
+
+ .tiktok-logo-text {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: -1470px;
+}
+
+.app svg path {
+  fill: black;
+}
+
+.app__videos {
+  margin-top: 10px;
+}
+
+.app svg {
+  margin-right: -90px;
+}
+
