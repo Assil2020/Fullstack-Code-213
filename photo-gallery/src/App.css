@@ -1,0 +1,36 @@
+.App-div {
+  max-width: 1500px;
+  height:780px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  font-family: 'Arial', sans-serif;
+ }
+ 
+ input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+ }
+ 
+ .placeholder {
+  margin: 20px;
+  font-size: 18px;
+  color: #888;
+ }
+ 
+ img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+ }
+ 
+ img:hover {
+  transform: scale(1.1);
+ }
