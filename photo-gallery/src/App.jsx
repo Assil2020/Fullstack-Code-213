@@ -69,6 +69,8 @@ const images = [
 ];
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true);
   const filteredImages = images.filter((image) =>
     image.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
