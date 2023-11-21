@@ -58,6 +58,10 @@ const images = [
     name: "Songoku",
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqcm7Ypgb3RQeGr0RM3j6ZIATBDauaCRg7g&usqp=CAU",
   },
+  {
+    name: "Vegeta",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Mb6DKqgmJQC03d0xWyeD97Wr743V_Hw4EQ&usqp=CAU",
+  },
 ];
 
 const App = () => {
