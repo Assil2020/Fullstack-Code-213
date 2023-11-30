@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+        color: #495057;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+
+      div {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      div > div {
+        border: 1px solid #dee2e6;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      button {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      a.confirm-button,
+      a.back-button {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      a.confirm-button {
+        background-color: #28a745;
+      }
+
+      a.back-button {
+        background-color: #007bff;
+      }
+
+      a.back-button:hover,
+      a.confirm-button:hover,
+      button:hover {
+        background-color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <div>
+      <% if (cart.length === 0) { %>
+      <p>Your cart is empty.</p>
+      <a href="/" class="back-button">Back to Home</a>
+      <% } else { %> <% let totalCartPrice = 0; %> <% cart.forEach(cartItem => {
+      %>
+      <div>
+        <h2><%= cartItem.title %></h2>
+        <p>Author: <%= cartItem.author %></p>
+        <p>Quantity: <%= cartItem.quantity %></p>
+        <p>Price: <%= cartItem.price %></p>
+        <p>
+          Total Price: <%= cartItem.price * cartItem.quantity.toFixed(2) %> USD
+        </p>
+
+        <form action="/delete-from-cart/<%= cartItem.bookId %>" method="post">
+          <button type="submit">Remove from Cart</button>
+        </form>
+
+        <% totalCartPrice += cartItem.price * cartItem.quantity; %>
+      </div>
+      <% }); %>
+
+      <p>Total Cart Price: <%= totalCartPrice.toFixed(2) %> USD</p>
+
+      <a href="/confirm-purchase" class="confirm-button">Confirm Purchase</a>
+
+      <a href="/" class="back-button">Back to Home</a>
+      <% } %>
+    </div>
+  </body>
+</html>

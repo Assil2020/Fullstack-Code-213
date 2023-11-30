@@ -1,0 +1,20 @@
+[
+  {
+    "id": "86ce7f95-82a7-4832-9cf5-8d36dee8c6a7",
+    "title": "Whispera",
+    "author": "James",
+    "published": "2023-11-18",
+    "genre": "Fiction",
+    "description": "nan",
+    "price": "30001"
+  },
+  {
+    "id": "6e285e3a-2fbf-403e-a4a1-b20d9a899182",
+    "title": "Fare away",
+    "author": "Caroline",
+    "published": "2023-11-15",
+    "genre": "Thriller",
+    "description": "nan",
+    "price": "200"
+  }
+]

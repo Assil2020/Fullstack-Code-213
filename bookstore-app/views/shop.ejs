@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <script>
+      function addToCartConfirmation(bookId) {
+        if (confirm("Do you want to add this book to the cart?")) {
+          window.location.href = "/products/add-to-cart/" + bookId;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Bookstore - Shop</h1>
+    <div class="container">
+      <div class="row">
+        <% books.forEach(book => { %>
+        <div class="col-md-4">
+          <div class="book-container">
+            <h2><%= book.title %></h2>
+            <p><%= book.description %></p>
+            <p>Author: <%= book.author %></p>
+            <p>Published: <%= book.published %></p>
+            <p>Genre: <%= book.genre %></p>
+            <p>Price: $<%= book.price %></p>
+            <button
+              onclick="addToCartConfirmation('<%= book.id %>')"
+              class="btn-book"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>
